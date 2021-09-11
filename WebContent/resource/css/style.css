@@ -1,0 +1,245 @@
+/*메인*/
+span:hover {
+	text-decoration:none;
+}
+.clear_div {
+	margin-left: 18%;
+	width: 800px;
+}
+
+.div_hid {
+	margin-left: 100px;
+	right: 245px;
+	top: 25px;
+}
+span{color:#ddd;}
+.img_icon {
+	width: 40px;
+	height: auto;
+}
+/*게시판 보기 이전*/
+.a_link:hover {
+	text-decoration:none;
+	color:#FA6862;
+}
+/*로그인*/
+.a_styl {
+	font-family: "Open Sans", sans-serif;
+	font-size: 0.9pc;
+	color: firebrick;
+	margin-top: -0.2pc;
+}
+
+.email_length {
+	width: 100%;
+}
+
+.div_margin {
+	margin-top: 1%;
+}
+
+.login_imgbiv p {
+	margin-left: 12%;
+}
+
+.login_imgbiv h2 img {
+	margin-left: 8%;
+}
+/*회원가입*/
+.check_styl {
+	width: 100%;
+	height: 7pc;
+	background-color: #1e2530;
+	color: #bcbcbc;
+	border-radius: 3px;
+	padding: 1pc;
+	font-family: "Open Sans", sans-serif;
+}
+
+.check_styl input {
+	margin-left: 0.6pc;
+}
+
+.check_styl2 {
+	height: 4pc;
+}
+
+.check_styl2 span {
+	padding: 1.5pc 1pc 1.5pc 0pc;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.check_styl2 input {
+	margin-left: 1pc;
+}
+
+.check_styl2 .check_styl2_child {
+	margin-left: 0.8pc;
+}
+/*개시판*/
+.container_div{
+	font-size:0.9pc;
+	line-height: 6;
+	margin-top:-100px;
+}
+
+/*게시판 로고 사이즈*/
+.img_size {
+	width: 200px;
+	height: auto;
+	margin: 0 0 0 240px;
+}
+.img_size2 {
+	width: 200px;
+	height: auto;
+	margin: 30px 0 10px 20px;
+	}
+.h2_seat{
+	width: 260px;
+	margin:auto;
+	margin-bottom: 20px;
+	font-size:2.2pc;
+	
+}
+
+
+.h2_seat_color{
+	color:#000;
+	 font-weight: 600;
+	 font-family: "Open Sans", sans-serif;
+	 background-color:#fff;
+}
+.thead_color{
+	background-color:#1e2530;
+}
+.thead_color > tr >th{
+	color:#fff;
+	font-family: "Open Sans", sans-serif;
+}
+/*게시판 읽기*/
+.table_reading {
+    width: 100%;
+    border: 1px solid #444444;
+  }
+.thead_th {
+    border-bottom:0px;
+}
+/*버튼색*/
+.button_color {
+	background-color: #1e2530;
+}
+.button_color:hover {
+	background-color: #FA6862;
+}
+.button_FA6862 {
+	background-color: #FA6862;
+	color:#fff;
+}
+.div_button{
+	height:30px;
+	line-height: 30px;
+	border-radius: 5px 5px;
+	margin-right:10px;
+}
+.div_button > button{
+	line-height: 20px;
+}
+.button_FA6862_seat{
+	width:100px;
+	float: right;
+}
+
+.a_color {
+	color: #FA6862;
+}
+
+.input_file{
+  padding: 6px 25px;
+  background-color:#FF6600;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+/*버튼 숨기기*/
+.file_hidden label {
+	display: inline-block;
+	padding: .5em .75em;
+	color: #999;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	
+	}
+
+
+@media ( min-width : 1200px) {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.login_box {
+		margin-left: 24%;
+	}
+	.login_logo {
+		margin-left: 2%;
+	}
+}
+
+@media ( min-width :769px) and (max-width:1199px) {
+	/*로고 이미지 사이즈*/
+	img {
+		max-width: 70%;
+		height: auto;
+	}
+	/*메인*/
+	.clear_div {
+		margin-left: 13%;
+		width: 800px;
+	}
+	
+	/*마이페이지 회원가입 중간크기*/
+	.mid{
+		width: 84%;
+	}
+}
+
+/*모바일 크기*/
+@media ( min-width :0px) and (max-width:768px) {
+	/*로고 이미지 사이즈*/
+	img {
+		max-width: 80%;
+		height: auto;
+	}
+	/*회원가입 알레르기 창*/
+	.check_styl {
+		width: 100%;
+		height: 9pc;
+		background-color: #1e2530;
+		color: #bcbcbc;
+		border-radius: 3px;
+		padding: 1pc;
+		font-family: "Open Sans", sans-serif;
+	}
+	/*회원가입 성별 생년월일 높이*/
+	.check_styl2 {
+		height: 4pc;
+	}
+	/*메인*/
+	.clear_div {
+		margin-left: 25%;
+		width: 100px;
+	}
+	.div_hid {
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		margin-left: 0%;
+	}
+}

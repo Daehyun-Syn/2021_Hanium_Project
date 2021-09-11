@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+.h2_seat2{
+	width: 199px;
+	margin:auto;
+	margin-bottom: 20px;
+	font-size:2.2pc;
+}
+.wrap{
+	width: 1000px;
+	margin:0 auto;
+}
+
+
+.sub_image {
+	width:100%;
+	height:300px;
+	background-image:url(../img/logo.png);
+}
+.siub {
+	width:1110px;
+	margin:0 auto;
+}
+.wrap .grid .element-item {
+	float:left;
+	margin:26px auto;
+}
+.wrap .grid .element-item a {
+	color:#666;
+	font-weight:bold;
+}
+.wrap .grid .element-item div:hover {
+}
+.wrap .grid .element-item div:hover a {
+	color:#003d00;
+}
+.wrap .grid .element-item {
+	width:1000px;
+	margin:0 auto;
+}
+.wrap .grid .element-item img {
+	width:320px;
+	height:auto;
+}
+.wrap .grid .element-item{
+	width:320px;
+	height:auto;
+	float:left;
+	margin-left:40px;
+	margin-right:0px;
+	margin-bottom:120px;
+	cursor:pointer;
+}
+.wrap .grid .element-item{
+	text-align:center;
+}
+.siub .big_demo .grid .element-item:nth-child(3n){
+	margin-right:0;
+}
+/*.siub .big_demo .grid .element-item:nth-child(3) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감
+}
+.siub .big_demo .grid .element-item:nth-child(6) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}
+.siub .big_demo .grid .element-item:nth-child(9) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}
+.siub .big_demo .grid .element-item:nth-child(12) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}
+.siub .big_demo .grid .element-item:nth-child(15) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어/
+}
+.siub .big_demo .grid .element-item:nth-child(18) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}
+.siub .big_demo .grid .element-item:nth-child(21) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어
+}
+.siub .big_demo .grid .element-item:nth-child(24) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}
+.siub .big_demo .grid .element-item:nth-child(27) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}
+.siub .big_demo .grid .element-item:nth-child(30) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}
+.siub .big_demo .grid .element-item:nth-child(33) {
+	margin-right:0; /*이거 안해주면 1000안에 안들어/
+}
+.siub .big_demo .grid .element-item:last-child {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감/
+}*/
+.siub .big_demo .grid h3 {
+	color:#003d00;
+	text-align:center;
+}
+.siub .big_demo .grid .c1 {
+	width:320px;
+	height:80px;
+	text-align:center;
+	margin-top:22px;
+}
+.siub .big_demo .grid .c2 {
+	margin-top:15px;
+}
+.siub .big_demo .grid ul li div p {
+	font-size:14px;
+	color:#999;
+	/*font-family:sans-serif; 이게 뭐징*/
+}
+.siub .big_demo .grid .c1 .p1 {
+	color:#d21f1f;
+	font-weight:bold;
+	/*text-decoration:line-through; 가운데 빗금*/
+	display:inline-block;
+	height:18px;
+}
+.button_first{
+	margin-left:40px;
+}
+button {
+	width:90px;
+	height:30px;
+	color:#333;
+	margin:30px 5px;
+	background:none;
+	border:0;
+	outline:0;
+	cursor:pointer;
+	padding-bottom:4px;
+}
+button:hover, button.active {
+	background-color:#FA6862;
+	color:#e2e2e2;
+}
+
+
+
+
+/*중간사이즈*/
+@media ( min-width :769px) and (max-width:1200px){
+	
+	.siub {
+		width:1000px;
+		margin:0 auto;
+	}
+	.wrap{
+		width: 1000px;
+		margin:0 auto;
+	}
+	
+	.wrap .grid .element-item{
+		float:left;
+		margin-left:0px;
+		margin-right:0px;
+		margin-bottom:50px;
+		cursor:pointer;
+	}
+	
+}
+
+
+
+/*작은사이즈*/
+@media ( min-width :0px) and (max-width:768px){
+	
+	.siub {
+		width:500px;
+		margin:0 auto;
+	}
+	.wrap{
+		width: 500px;
+		margin:0 auto;
+	}
+	
+	.wrap .grid .element-item{
+		float:left;
+		margin-left:18%;
+		margin-right:0px;
+		margin-bottom:30px;
+		cursor:pointer;
+	}
+	
+}
+
+
+
+
+
+
+
+
+

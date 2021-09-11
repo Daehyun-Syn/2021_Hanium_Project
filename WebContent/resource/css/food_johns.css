@@ -1,0 +1,479 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0; }
+li { list-style:none; }
+a { text-decoration:none; color:#333; display:block;}
+img { width:100% }
+h1 {
+	width:100%;
+	text-align:center;
+}
+
+.wrap {
+	width:100%;
+}
+header {
+	width:100%;
+	background-color:#fff;
+	position:fixed; /*이럴떄 마진력오토가 안 먹힌다*/
+	z-index:100;
+	height:110px;
+	top:0;
+}
+.header {
+	width:1200px;
+	margin:0 auto;
+	position:relative; /*이거 안 쓰면 z-index 안 먹힘*/
+	z-index:102;
+	/*top:0;
+	left:50%;
+	margin-left:-600px;*/
+}
+.logo {
+	width:110px;
+	height:102px;
+	float:left;
+	margin-top:8px;
+}
+.nav {
+	width:1080px;
+	float:right;
+	margin-top:55px;
+}
+.nav ul li {
+	float:left;
+}
+.nav ul li a {
+	padding:15px 60px 15px;
+	font-size:17px;
+	font-weight:bold;
+	text-align:center;
+	color:#666;
+}
+.nav ul li span {
+	color:#F63;
+}
+.nav ul li a:hover {
+	color:#003d00;
+}
+.sub_bg {
+	position:absolute;
+	z-index:101;
+	width:100%;
+	top:100px;
+	left:0;
+	height:240px;
+	background-color:rgb(255,255,255,0.8);
+	display:none;
+}
+nav .sub {
+	display:none;
+}
+nav .sub li {
+	float:none;
+}
+nav .sub li a {
+	font-size:15px;
+	text-align:center;
+	padding:10px 0;
+	padding-bottom:12px;
+}
+section {
+	width:100%;
+	height:100%;
+}
+/*main slide 슬라이드,*/
+.main_wrap, .real_wrap {
+	position:relative;
+	width:100%;
+	height:600px;
+	padding-top:100px;
+}
+.main {
+	width:1920px;
+	height:600px;
+	/*해상도 낮아도 가운데 정렬되게 할려고*/
+	position:absolute;
+	left:50%;
+	margin-left:-960px;
+	top:100px;
+	overflow:hidden;
+}
+.main > ul {
+	width:11000px;
+	position:absolute;
+	left:-1920px;
+	top:0;
+}
+.main > ul > li {
+	float:left;
+}
+/*슬라이드 버튼*/
+.main .btn {
+	position:absolute;
+	bottom:15px;
+	width:120px; /*가운데 공식*/
+	margin-left:-60px;
+	left:50%;
+}
+.main .btn ul li {
+	width:20px;
+	height:20px;
+	background-color:#Fff;
+	border-radius:100%;
+	margin:10px;
+	float:left;
+	text-indent:-9999px; /*글씨 안 보이게*/
+	box-shadow:1px 1px 1px #666;
+	cursor:pointer;
+}
+.main .btn ul li:hover, .main .btn ul li.active {
+	background-color:#003d00;
+}
+/*슬라이드 왼쪽, 오른쪽 버튼*/
+.main .prev {
+	position:absolute;
+	width:70px;
+	height:70px;
+	left:0;
+	top:50%;
+	margin-top:-30px;
+}
+.main .next {
+	position:absolute;
+	width:70px;
+	height:70px;
+	right:0;
+	top:50%;
+	margin-top:-30px;
+}
+/*menu 메뉴*/
+.menu {
+	/*position:absolute; top:600px 이렇게 하면 안 된다 다른 애들도 겹침*/
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+	padding-top:100px;
+}
+.menu .menu_ul {
+	margin-top:80px;
+}
+.menu h1 {
+	width:106px;
+	height:31px;
+	margin:0 auto;
+}
+.menu > p {
+	margin-left:367px;
+	margin-top:15px;
+	color:#666;
+	font-size:15px;
+	font-weight:bold;
+}
+.menu ul li {
+	width:300px;
+	height:250px;
+	float:left;
+	margin-right:50px;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+.menu ul li:last-child {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감*/
+}
+.menu ul li:first-child {
+	background-image:url(../img/menu_1.jpg);
+}
+.menu ul li:nth-child(2) {
+	background-image:url(../img/menu_2.jpg);
+}
+.menu ul li:last-child {
+	background-image:url(../img/menu_3.jpg);
+}
+.menu ul li p {display:none;}
+.menu ul li:hover p {
+	display:block;
+}
+
+.menu ul div {
+	width:300px;
+	height:120px;
+	float:left;
+	margin-right:50px;
+	margin-bottom:70px;
+	cursor:pointer;
+}
+.menu ul div:last-child {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감*/
+}
+
+/*투명도 위에서 내려오기*/
+
+/*메뉴 글씨*/
+.menu ul h3 {
+	color:#003d00;
+	margin-bottom:-12px;
+}
+.menu ul p {
+	font-size:14px;
+	margin-bottom:8px;
+}
+.menu ul .p1 {
+	color:#d21f1f;
+	font-weight:bold;
+	text-decoration:line-through; /*가운데 빗금*/
+	display:inline-block;
+	height:18px;
+	float:left;
+	margin-right:8px;
+}
+.menu ul .p2 {
+	color:#d21f1f;
+	font-weight:bold;
+	/*display:block;*/
+	height:18px;
+}
+/*real_wrap*/
+.real h1 {
+	width:355px;
+	height:31px;
+	margin:0 auto;
+	margin-top:140px;
+	margin-bottom:60px;
+}
+.real { /*윈도우 가운데 정렬 공식*/
+	position:absolute;
+	top:0;
+	width:1920px;
+	left:50%;
+	margin-left:-960px;
+}
+.real > ul > li {
+	width:1920px;
+	height:600px;
+	position:absolute; /*글씨까지 다 겹치는데 > 부등호로 큰 배경영역만 겹침*/
+	top:250px;
+	left:0;
+}
+.real .real1 {
+	background-image:url(../img/main_1.jpg);
+}
+.real .real2 {
+	background-image:url(../img/main_2.jpg);
+}
+.real .real3 {
+	background-image:url(../img/main_3.jpg);
+}
+.real ul li ul {
+	width:1750px;
+	margin:0 auto;
+	padding-top:83px;
+}
+.real ul li ul li {
+	width:310px;
+	height:380px;
+	padding-top:61px;
+	margin-right:50px;
+	float:left;
+	text-align:center;
+	background-color:rgba(0,61,0,0.7);
+	box-shadow:1px 1px 2px #333;
+}
+.real ul li ul li:last-child {
+	margin-right:0;
+}
+.real img { width:initial; }
+/*
+.real ul li:first-child ul li {첫 번째 영역 테두리 색
+	background-color:rgba(255,126,0,0.7);
+}
+.real ul li:nth-child(2) ul li {
+	background-color:rgba(0,61,0,0.7);
+}
+.real ul li:last-child ul li {세 번째 영역 테두리 색
+	background-color:rgba(0,61,0,0.7);
+}*/
+
+/*real_btn버튼*/
+.real .real_btn {
+	width:70px;
+	position:absolute;
+	right:128px;
+	top:290px;
+	z-index:50;
+}
+.real .real_btn a {
+	width:30px;
+	height:30px;
+	float:left;
+}
+.real .real_btn a img {
+	width:30px;
+	height:30px;
+}
+
+/*안에 있는 이미지*//*에드클레스로 처음이미지는 나타나있게 할 수 있다 해봐ㅠ*/
+.real ul li ul li { /*마지막값*/
+	margin-left:-200px;
+	opacity:0; /*투명도*/
+	transition:all 0.5s 0.5s; /*실행시간, 대기시간*/
+}
+.real ul li ul li.active { /*초기값*/
+	margin-left:0;
+	opacity:1;
+}
+.real ul li ul li:nth-child(2) { /*마지막값 두번쨰*/
+	margin-left:-200px;
+	opacity:0; /*투명도*/
+	transition:all 0.5s 1s; /*실행시간, 대기시간*/
+}
+.real ul li ul li.active:nth-child(2) { /*초기값 두번째*/
+	margin-left:0;
+	opacity:1;
+}
+.real ul li ul li:nth-child(3) { /*마지막값 3*/
+	margin-left:-200px;
+	opacity:0; /*투명도*/
+	transition:all 0.5s 1.5s; /*실행시간, 대기시간*/
+}
+.real ul li ul li.active:nth-child(3) { /*초기값 3*/
+	margin-left:0;
+	opacity:1;
+}
+.real ul li ul li:nth-child(4) { /*마지막값 4*/
+	margin-left:-200px;
+	opacity:0; /*투명도*/
+	transition:all 0.5s 2s; /*실행시간, 대기시간*/
+}
+.real ul li ul li.active:nth-child(4) { /*초기값 4*/
+	margin-left:0;
+	opacity:1;
+}
+.real ul li ul li:last-child { /*마지막값 5*/
+	margin-left:-200px;
+	opacity:0; /*투명도*/
+	transition:all 0.5s 2.5s; /*실행시간, 대기시간*/
+}
+.real ul li ul li.active:last-child { /*초기값 5*/
+	margin-left:0;
+	opacity:1;
+}
+/*위로 나오게 하고 싶으면
+.real ul li ul li:nth-child(2) { 
+	margin-top:300px;
+		margin-top:300px; /top:0;
+tion:all 0.5s 1s; 
+}
+.real ul li ul li.active:nth-child(2) {
+	margin-top:0;
+	opacity:1;
+}
+*/
+
+.pizza .pizza_img {
+	width:1920px;
+	height:600px;
+	margin-top:400px;
+}
+
+
+.store {
+	/*position:absolute; /*top:600px; 이렇게 하면 안 된다 다른 애들도 겹침*/
+	width:1920px;
+	height:300px;
+	/*padding-top:0px;*/
+	margin-bottom:200px;
+}
+.store ul {
+	/*width:1400px;
+	height:300px;*/
+	margin:0 auto;
+	margin-left:500px;
+}
+.store ul li {
+	width:256px;
+	height:256px;
+	float:left;
+	margin-right:50px;
+	cursor:pointer;
+	margin-top:80px;
+	opacity:0;
+}
+/*store 에니메이션*/
+.store ul li.active:first-child {
+	margin-top:0;
+	opacity:1;
+	transition:all 1s 0.4s;
+}
+.store ul li.active:nth-child(2) {
+	margin-top:0;
+	opacity:1;
+	transition:all 1s 0.6s;
+}
+.store ul li.active:last-child {
+	margin-top:0;
+	opacity:1;
+	transition:all 1s 0.8s;
+}
+
+.store ul li:last-child {
+	margin-right:0; /*이거 안해주면 1000안에 안들어감*/
+}
+
+.store ul li p {
+	text-align:center;
+	color:#000;
+	font-size:24px;
+	widht:400px;
+	margin-top:20px;
+}
+
+/*footer 푸터*/
+footer {
+	width:100%;
+	height:150px;
+	background-color:#333;
+	clear:both;
+}
+.footer {
+	color:#666;
+}
+.footer p {
+	font-size:12px;
+	widht:500px;
+}
+.footer .footer_box {
+	width:1000px;
+	height:110px;
+	margin:0 auto;
+	padding-top:20px;
+}
+.footer .footer_box .pp1 {
+	color:#317531;
+	font-size:14px;
+	float:left;
+	font-weight:bold;
+}
+.footer a {
+	font-size:14px;
+	color:#666;
+	font-weight:bold;
+	padding:10px 0 10px 0;
+}
+.footer .footer_box ul {
+	height:50px;
+	float:right;
+	margin-top:-80px;
+}
+.footer .footer_box ul li {
+	height:30px;
+	float:left;
+	margin-right:20px;
+	/*cursor:pointer;*/
+}
+
+
+
+
+
+
