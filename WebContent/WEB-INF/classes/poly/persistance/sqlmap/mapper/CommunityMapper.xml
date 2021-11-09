@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.ICommunityMapper">
+
+	<!-- ======== 파라미터타입 : 쿼리문에 내가 원하는 값을 직접 넣어주기 위해 사용  / 리절트타입 : 쿼리문의 결과로 어떤 타입의 객체로 반환을 할지 명시함  ======== -->
+
+
+	<!-- ======== 게시판작성 ======== -->
+	
+	<insert id = "insertCommunity" parameterType="ProjectsDTO"> 
+		INSERT INTO COMMUNITY_INFO(
+			BOARD_TITLE,
+			BOARD_WRITER,
+			BOARD_CONTENTS,
+			USER_ID
+		) values(
+			#{board_title},
+			#{board_writer},
+			#{board_contents},
+			#{user_id}
+		)
+	</insert>
+	
+	<!-- ======== DB에있는 게시판 내용을 불러오는 SQL쿼리문 ======== -->
+	<select id = "getBoardList" parameterType="ProjectsDTO" resultType="ProjectsDTO">
+	SELECT BOARD_SEQ, BOARD_TITLE, BOARD_WRITER, BOARD_CONTENTS, BOARD_REGDATE FROM COMMUNITY_INFO
+	</select>
+
+	<!-- ======== 게시판 상세 페이지 출력을 위한 SQL쿼리문  ======== -->
+	<select id = "getBoard"  parameterType="ProjectsDTO" resultType="ProjectsDTO">
+	SELECT BOARD_SEQ, BOARD_TITLE, BOARD_WRITER, BOARD_CONTENTS, BOARD_REGDATE, USER_ID FROM COMMUNITY_INFO 
+	WHERE BOARD_SEQ=#{board_seq}
+	</select>
+	
+	<!-- ======== 게시글 수정을 위한 SQL쿼리문 ======== -->
+	<update id = "updateCommunity" parameterType="ProjectsDTO"> 
+		UPDATE COMMUNITY_INFO
+			SET
+				BOARD_TITLE = #{board_title},
+				BOARD_WRITER = #{board_writer},
+				BOARD_CONTENTS = #{board_contents}
+			WHERE BOARD_SEQ = #{board_seq}
+		
+	</update>
+	
+	<!-- ======== 게시글 삭제를 위한 SQL쿼리문 ======== -->
+	<delete id = "deleteCommunity" parameterType="ProjectsDTO"> 
+	
+	DELETE FROM COMMUNITY_INFO
+		WHERE BOARD_SEQ = #{board_seq}
+	
+	</delete>
+	<select id="countBoard" resultType="int">
+	SELECT COUNT(*) FROM COMMUNITY_INFO
+	</select>
+	
+	
+	<select id="selectBoard" resultType="ProjectsDTO">
+	SELECT *
+	FROM(SELECT @ROWNUM := @ROWNUM +1 AS ROWNUM, c.*
+	  FROM allforyou.COMMUNITY_INFO c, (SELECT @ROWNUM := 0) TMP
+	ORDER BY BOARD_REGDATE DESC) SUB
+   	 WHERE SUB.ROWNUM BETWEEN #{start} AND #{end}
+
+	</select>
+	
+	
+</mapper>
