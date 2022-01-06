@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.IPWCMapper">
+
+	<select id="Search" parameterType="ProjectsDTO" resultType="ProjectsDTO">
+	SELECT * FROM USER_INFO
+	WHERE USER_ID = #{user_id}
+	</select>
+	
+	<update id="New" parameterType="ProjectsDTO">
+	UPDATE USER_INFO
+	SET USER_PWD = #{user_pwd}
+	WHERE USER_ID = #{user_id}
+	
+	</update>
+	
+	<!-- 비밀번호가 일치하는지 알아보기 -->		
+	<select id="getPWExists" parameterType="ProjectsDTO" resultType="ProjectsDTO">
+		 SELECT 
+		 (CASE WHEN USER_PWD=#{user_pwdck} THEN 'Y' ELSE 'N' END) AS EXISTS_YN
+		 FROM USER_INFO 
+		 WHERE USER_ID=#{user_id}
+	</select>
+</mapper>
