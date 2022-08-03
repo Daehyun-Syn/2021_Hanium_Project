@@ -1,5 +1,5 @@
 ## <img width=20px src=https://user-images.githubusercontent.com/42789819/115147514-42221300-a096-11eb-9526-a68b8094f79c.png>  Project
-**5	TensorFlow와 Papago API를 사용한 음식 인식 및 번역 서비스, Allergy For You**
+**TensorFlow와 Papago API를 사용한 음식 인식 및 번역 서비스, Allergy For You**
 > **🏆  2021 한이음 공모전 입선 | 주최 : 과학기술정보통신부**
 > 
 > **팀원: 신대현, 오주현, 유연준, 이진아, 김학겸**  
