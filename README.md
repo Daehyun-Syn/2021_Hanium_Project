@@ -60,7 +60,7 @@
 * Tomcat 
 * AWS
 ## 디렉터리 정보
-### | 2021_HaniumPrj_Demo
-* Spring Project code 디렉터리
+### | 2021_Hanium_Project
+* Spring Framework Project 디렉터리
 ### | OCR
-* 이미지 분석을 위한 TensorFlow 및 Spring Framework와 통신을 위한 Flask의 Python Code 디렉터리
+* 이미지 분석및 판독을 위한 TensorFlow 및 Spring Framework와 통신을 위한 Flask의 Python 디렉터리
