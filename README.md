@@ -6,12 +6,12 @@
 > 
 > **프로젝트 기간: 2021.03 ~ 2021.10**  
 ## 목차
-[1.프로젝트 설명](#프로젝트-설명)
+[1.프로젝트 소개](#프로젝트-소개)
 * 제안 배경
 * 기대 효과
 * 단점 및 해결 방안
   
-[2.사용 기술](#솔루션에-사용된-기술-및-버전)
+[2.사용 기술](#사용-기술)
 *  Language
 *  Data Base
 *  Framework
@@ -19,7 +19,7 @@
 *  Server
   
 [3.디렉터리 정보](#디렉터리-정보)
-* 2021_HaniumPrj_Demo
+* 2021_Hanium_Project
 * OCR<br>
   
 
@@ -44,7 +44,7 @@
 * Java 
 * Python 
 * Html5
-* Css3
+* CSS3
 * JavaScript
 ### | Data Base
 * MySQL 
@@ -52,13 +52,13 @@
 * Spring Framework 
 ### | Tool
 * Eclipse
-* Pycharm
+* PyCharm
 * Git Hub
 * Git Bash
 * MySQL Workbench
 ### | Server
 * Tomcat 
-* AWS
+* Amazon EC2
 ## 디렉터리 정보
 ### | 2021_Hanium_Project
 * Spring Framework Project 디렉터리
